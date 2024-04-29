@@ -5,8 +5,8 @@
 * CPF  705.484.450-52
 
 ###  1. Pegando os nove primeiros dígitos do CPF e multiplicando por uma sequência regressiva começando por 10, obtemos o total:
-7x10 0x9 5x8 4x7 8x6 4x5 4x4 5x3 0x2
-70 0 40 28 48 20 16 15 0 = **237**
+* 7x10 0x9 5x8 4x7 8x6 4x5 4x4 5x3 0x2
+* 70 0 40 28 48 20 16 15 0 = **237**
 
 ### 2. Descobrindo o penúltimo digito
 *  11 - (237 % 11) = **5** (penúltimo digito)
