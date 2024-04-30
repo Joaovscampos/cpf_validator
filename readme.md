@@ -2,7 +2,7 @@
 
   
 ## Lógica Utilizada
-* CPF  705.484.450-52
+* Modelo gerado com uma ferramenta web CPF: **705.484.450-52**
 
 ###  1. Pegando os nove primeiros dígitos do CPF e multiplicando por uma sequência regressiva começando por 10, obtemos o total:
 * 7x10 0x9 5x8 4x7 8x6 4x5 4x4 5x3 0x2
@@ -12,7 +12,7 @@
 *  11 - (237 % 11) = **5** (penúltimo digito)
 * Se o número digito for maior que 9, consideramos 0.
 
-###  3. Descobrindo o ultimo digito 
+###  3. Inserindo o penúltimo digito na nova contagem   
 * 7x11 0x10 5x9 4x8 8x7 4x6 4x5 5x4 0x3 5x2
 *  77   0   45  32  56  24  20  20   0   10 = **284**
 
@@ -21,12 +21,14 @@
 * Se o número digito for maior que 9, consideramos 0.
 
  ## Tecnologias Utilizadas
- * JavaScript
+ * JavaScript(funções construtoras, classes, métodos de array)
  * HTML
  * CSS
  
  ## Funcionalidades
  A aplicação permite receber um cpf e verificar se o mesmo é válido de acordo com as normas impostas pela receita federal. Em breve pretendo criar um gerador de cpf valido e complexar/melhorar a estética da aplicação.
+
+ Crie um arquivo main.js com uma lógica feita utilizando função construtora, já o arquivo developer.js foi feito utilizando uma classe e com a adição de mais metodos com uma estrutura mais organizada voltada para o backend. 
 
 ## Autor
 Este projeto foi desenvolvido por mim como parte de um exercício de prática em JavaScript.
