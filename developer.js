@@ -10,7 +10,7 @@ class Validacpf{
    validaCPF(){
     if(typeof this.cpfLimpo === 'undefined') return false;
     if(this.cpfLimpo.length !== 11) return false;
-    if(this.isSequencia()) return false;
+    if(this.sequencia()) return false;
 
     const cpfParcial = this.cpfLimpo.slice(0, -2);
     const digito1 = this.criaDigito(cpfParcial);
@@ -28,7 +28,7 @@ class Validacpf{
     return digito > 9 ? '0' : String(digito);
    };
    
-   isSequencia(){
+   sequencia(){
     const sequencia = this.cpfLimpo[0].repeat(this.cpfLimpo.length);
     return sequencia === this.cpfLimpo;
    };
